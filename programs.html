@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programs | Kiran Academy Pune</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .page-hero {
+            padding: 160px 5% 90px;
+            text-align: center;
+            background:
+                radial-gradient(circle at 15% 20%, #e8edff, transparent 30%),
+                radial-gradient(circle at 85% 20%, #fff3b8, transparent 30%),
+                #fff;
+        }
+
+        .page-hero h1 {
+            font-family: "Plus Jakarta Sans";
+            font-size: clamp(40px, 6vw, 68px);
+            letter-spacing: -3px;
+        }
+
+        .page-hero h1 span {
+            color: var(--blue);
+        }
+
+        .page-hero p {
+            max-width: 650px;
+            margin: 20px auto;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .page-programs {
+            padding: 90px 5%;
+        }
+
+        .program-detail-grid {
+            max-width: 1180px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .detail-box {
+            padding: 35px;
+            border-radius: 28px;
+            min-height: 350px;
+            transition: .3s;
+        }
+
+        .detail-box:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .detail-box:nth-child(1) {
+            background: #eaf0ff;
+        }
+
+        .detail-box:nth-child(2) {
+            background: #fff5ca;
+        }
+
+        .detail-box:nth-child(3) {
+            background: #ffe7f2;
+        }
+
+        .detail-box:nth-child(4) {
+            background: #e1faef;
+        }
+
+        .detail-icon {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 18px;
+            display: grid;
+            place-items: center;
+            font-size: 27px;
+            margin-bottom: 25px;
+        }
+
+        .detail-box h2 {
+            font-family: "Plus Jakarta Sans";
+            margin-bottom: 12px;
+        }
+
+        .detail-box p {
+            color: #626c80;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        .detail-box ul {
+            margin-top: 18px;
+            padding-left: 20px;
+            color: #596279;
+            line-height: 1.9;
+            font-size: 13px;
+        }
+
+        .detail-btn {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 12px 18px;
+            background: var(--blue);
+            color: white;
+            border-radius: 12px;
+            font-weight: 700;
+        }
+
+        @media(max-width:700px) {
+            .program-detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="index.html" class="brand">
+            <div class="brand-logo">K</div>
+            <div class="brand-name">Kiran Academy</div>
+        </a>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="programs.html">Programs</a>
+            <a href="about.html">Why Us</a>
+            <a href="stories.html">Stories</a>
+            <a href="contact.html" class="nav-button">Let's Talk</a>
+        </nav>
+
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+
+    </div>
+</header>
+
+
+<section class="page-hero">
+
+    <div class="section-label">Explore Programs</div>
+
+    <h1>Choose your <span>IT path.</span></h1>
+
+    <p>
+        Build practical technology skills through structured learning,
+        projects and interview preparation.
+    </p>
+
+</section>
+
+
+<section class="page-programs">
+
+    <div class="program-detail-grid">
+
+        <div class="detail-box">
+
+            <div class="detail-icon">☕</div>
+
+            <h2>Java Full Stack</h2>
+
+            <p>
+                Learn backend development and full-stack fundamentals
+                with Java and modern development tools.
+            </p>
+
+            <ul>
+                <li>Core Java</li>
+                <li>Spring Boot</li>
+                <li>Hibernate / JPA</li>
+                <li>REST APIs</li>
+                <li>MySQL</li>
+                <li>Frontend basics</li>
+            </ul>
+
+            <a href="java-full-stack.html" class="detail-btn">
+                View Program →
+            </a>
+
+        </div>
+
+
+        <div class="detail-box">
+
+            <div class="detail-icon">🐍</div>
+
+            <h2>Python Full Stack</h2>
+
+            <p>
+                Learn Python-based application development with
+                backend frameworks, databases and frontend fundamentals.
+            </p>
+
+            <ul>
+                <li>Python</li>
+                <li>Django / Flask</li>
+                <li>REST APIs</li>
+                <li>Database</li>
+                <li>Frontend basics</li>
+                <li>Projects</li>
+            </ul>
+
+            <a href="python.html" class="detail-btn">
+                View Program →
+            </a>
+
+        </div>
+
+
+        <div class="detail-box">
+
+            <div class="detail-icon">🧪</div>
+
+            <h2>Software Testing</h2>
+
+            <p>
+                Learn software testing concepts and automation
+                practices used in QA workflows.
+            </p>
+
+            <ul>
+                <li>Manual Testing</li>
+                <li>Selenium</li>
+                <li>TestNG</li>
+                <li>API Testing</li>
+                <li>Jira</li>
+                <li>Automation</li>
+            </ul>
+
+            <a href="testing.html" class="detail-btn">
+                View Program →
+            </a>
+
+        </div>
+
+
+        <div class="detail-box">
+
+            <div class="detail-icon">☁️</div>
+
+            <h2>DevOps</h2>
+
+            <p>
+                Understand development and operations workflows,
+                automation and modern deployment practices.
+            </p>
+
+            <ul>
+                <li>Linux</li>
+                <li>Git & GitHub</li>
+                <li>CI/CD</li>
+                <li>Docker</li>
+                <li>Cloud basics</li>
+                <li>Deployment</li>
+            </ul>
+
+            <a href="devops.html" class="detail-btn">
+                View Program →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <a href="index.html" class="brand">
+                <div class="brand-logo">K</div>
+                <div class="brand-name">Kiran Academy</div>
+            </a>
+
+            <p>
+                Learn practical IT skills, build projects and prepare
+                for your technology career.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Programs</h4>
+            <a href="java-full-stack.html">Java Full Stack</a>
+            <a href="python.html">Python</a>
+            <a href="testing.html">Testing</a>
+            <a href="devops.html">DevOps</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="stories.html">Stories</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
